@@ -11,7 +11,7 @@ public class App {
     {
     	ApiContextInitializer.init();
     	
-    	
+    	//This is a new message about my development branch
         // Instantiate Telegram Bots API
         TelegramBotsApi botsApi = new TelegramBotsApi();
 
