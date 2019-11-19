@@ -41,7 +41,7 @@ public class Kaan extends TelegramLongPollingBot {
 			long user_id = update.getMessage().getFrom().getId();
 			String message_text = update.getMessage().getText();
 			long chat_id = update.getMessage().getChatId();
-			
+
 
 			if (update.getMessage().getText().equals("/talk")) {
 				SendMessage message = new SendMessage() // Create a message object object
@@ -106,7 +106,7 @@ public class Kaan extends TelegramLongPollingBot {
 						e.printStackTrace();
 					}
 				}
-				
+
 				// Checking the item added on list or user just kidding us
 				else if (!itemList.contains(receiptItem)) {
 
@@ -124,8 +124,8 @@ public class Kaan extends TelegramLongPollingBot {
 					} catch (TelegramApiException e) {
 						e.printStackTrace();
 					}
-				} 
-				
+				}
+
 				else {
 					SendMessage doneMessage = new SendMessage().setChatId(chat_id)
 							.setText(confettiEmoji + "Oooh man at last you did something good" + confettiEmoji + "\n\n"
@@ -140,8 +140,8 @@ public class Kaan extends TelegramLongPollingBot {
 						e.printStackTrace();
 					}
 				}
-			} 
-			
+			}
+
 			else if (update.getMessage().getText().contains("/list")) {
 
 				if (itemList.isEmpty()) {
