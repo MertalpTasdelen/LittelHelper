@@ -49,16 +49,16 @@ public class Kaan extends TelegramLongPollingBot {
 								"Mertalp ozlemi cok ama cook fazla seviyor bunu ben bile sana aciklamak istesem bir kac yil belkide daha fazla yazi yamam gerek"
 										+ emoji);
 
-//				InlineKeyboardMarkup markupInline = new InlineKeyboardMarkup();
-//				List<List<InlineKeyboardButton>> rowsInline = new ArrayList<>();
-//				List<InlineKeyboardButton> rowInline = new ArrayList<>();
-//				rowInline.add(
-//						new InlineKeyboardButton().setText("Update message text").setCallbackData("update_msg_text"));
-//				// Set the keyboard to the markup
-//				rowsInline.add(rowInline);
-//				// Add it to the message
-//				markupInline.setKeyboard(rowsInline);
-//				message.setReplyMarkup(markupInline);
+				InlineKeyboardMarkup markupInline = new InlineKeyboardMarkup();
+				List<List<InlineKeyboardButton>> rowsInline = new ArrayList<>();
+				List<InlineKeyboardButton> rowInline = new ArrayList<>();
+				rowInline.add(
+						new InlineKeyboardButton().setText("Update message text").setCallbackData("update_msg_text"));
+				// Set the keyboard to the markup
+				rowsInline.add(rowInline);
+				// Add it to the message
+				markupInline.setKeyboard(rowsInline);
+				message.setReplyMarkup(markupInline);
 				log(user_first_name, user_last_name, Long.toString(user_id), message_text, Long.toString(chat_id));
 
 				try {
