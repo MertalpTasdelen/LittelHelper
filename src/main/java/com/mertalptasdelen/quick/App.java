@@ -1,5 +1,6 @@
 package com.mertalptasdelen.quick;
 
+
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.api.objects.Message;
@@ -10,7 +11,6 @@ public class App {
     public static void main( String[] args )
     {
     	ApiContextInitializer.init();
-    	
     	//This is a new message about my development branch
         // Instantiate Telegram Bots API
         TelegramBotsApi botsApi = new TelegramBotsApi();
