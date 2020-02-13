@@ -27,3 +27,7 @@ hs_err_pid*
 .setting
 .classpath
 target
+
+# file: ~/.gitignore_global
+.DS_Store
+.idea
